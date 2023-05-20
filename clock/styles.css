@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E2E3E0;
+    z-index: -10;
+}
+
+
+/* ============== clock  ============== */
+.clock__container {
+    position: relative;
+}
+
+.clock {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 50px;
+
+    width: 480px;
+    height: 200px;
+
+    border: 2px solid #000;
+    border-radius: 100px;
+
+    background-color: #DCDED3;
+
+    box-shadow: 10px 10px #BFBFBF inset;
+    z-index: 2;
+}
+
+.clock__bottom_shadow {
+    position: absolute;
+    top: 6.5%;
+    left: 4%;
+    z-index: 1;
+
+    width: 480px;
+    height: 200px;
+
+    border-radius: 100px;
+    box-shadow: 10px 10px #2F302C;
+
+    background-color: #A6A6A6;
+}
+
+
+/* ============== analog__clock  ============== */
+.analog__clock {
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+
+    border: 2px solid #000;
+    border-radius: 100%;
+}
+
+.clock__center_dot {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%, 0);
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000;
+    border-radius: 100%;
+}
+
+.clock__hour, .clock__minute {
+    position: absolute;
+    left: 50%;
+
+    background-color: red;
+
+    width: 5px;
+
+    z-index: 10;
+}
+
+.clock__hour {
+    height: 40px;
+}
+
+.clock__minute {
+    height: 55px;
+}
